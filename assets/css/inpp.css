@@ -1,0 +1,964 @@
+@charset "utf-8";
+body{
+  
+}
+
+@font-face {
+  font-family: "ArchitectsDaughter";
+  src: url("../fonts/Freescpt.TTF");
+}
+
+@font-face {
+  font-family: "Agenda-medium";
+  src: url("../fonts/Agenda-Medium.ttf");
+}
+@font-face {
+  font-family: "Altair";
+  src: url("../fonts/TodaySHOP-Regular.otf");
+}
+
+@font-face{
+    font-family:"rounded";
+    src: url("../fonts/SUNDAY  Personal use.ttf");
+}
+
+@font-face{
+    font-family:"source";
+    src: url("../fonts/Source/source-sans-pro.regular.ttf");
+}
+
+@font-face{
+    font-family:"distopia";
+    src: url("../fonts/Dystopia-Typeface/Dystopia-Bold.ttf");
+}
+
+@font-face{
+    font-family:"wardness";
+    src: url("../fonts/Tempus/TEMPSITC.TTF");
+}
+
+
+.navbar{
+
+    background-color: rgba(255, 255, 255, 0.96);
+    padding-left: 8px;
+    padding-right:40px;
+}
+
+.navbar-nav li a{
+  color: #87898a !important;
+  font-weight: 700;
+  padding-bottom:5px;
+  margin-left: 20px;
+  font: inherit !important;
+}
+
+/*Submenu despegable*/
+.navbar-nav .dropdown-menu .dropdown-item{
+
+	padding-bottom: 5px;
+	margin:0px;
+	border-style: solid;
+	border-color: black;
+}
+
+.navbar-nav li a p{
+
+	margin-top: 5px;
+	font-family: "Altair";
+}
+
+.navbar-nav li a:hover{
+  
+  border-radius: 10px 5px 10px 5px;
+
+  
+}
+
+.navbar-light .navbar-nav > li.nav-item:hover >a,
+.navbar-light .navbar-nav > li.nav-item:focus >a{
+
+	background-color:#0085ba;
+	color: white !important;
+    border-radius: 10px 5px 10px 5px;
+
+}
+
+.navbar-nav li i{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+/*Query que deshabilita los iconos en 
+resoluciones mayores a 770 px*/
+@media (min-width: 770px){
+  .mov{
+    display:none !important;
+  }
+}
+
+@media(min-width:1025px){
+
+     li.dropdown:hover>.dropdown-menu
+     {
+    	display: block;
+     }
+}
+ .navbar-nav .dropdown-menu{
+
+     	margin-left: 20px;
+      	margin-top:2px;
+      	border-radius: 10px 5px 10px 5px;
+      	
+}
+
+.carousell{
+    
+    margin-top:103px;	
+}
+
+.element{
+    max-width:98%;
+    margin: auto;
+}
+
+p{
+    font-family: "Altair";
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom:14px;
+    font-kerning: none;
+}
+
+
+.nosotros,
+.libros,
+.libros1{
+    
+    background-image: url(../images/back-nosotros.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -4%;
+    padding-bottom: 11%;
+    
+    
+}
+
+.nos{
+    
+    background-image: url(../images/back-nosotros.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -4%;
+    padding-bottom: 11%;
+    
+    
+}
+
+
+.nosotros h1{
+  
+  color: #FFF;
+}
+.nosotros h2,
+.nos h2{
+  
+  font-weight: 700;
+}
+
+.nosotros .white,
+.nos .white{
+    
+    color: #fafcfd !important;
+    font-weight: 200;
+    text-align: inherit;
+}
+.nosotros p,
+.nos p{
+  text-align:justify;
+  color: #FFF;
+    
+}
+
+/*Estilos servicios que ofrecen*/
+.blue2{
+  
+  color: #5bb3e2 !important;
+}
+
+.shadow{
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.68);
+  box-shadow:none !important;}
+
+/*Aplica la lineas laterales*/
+.metodo{
+
+  border-radius: 26px;
+  border-left: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+}
+
+
+.nosotros-c p{
+  
+  text-align: center!important;
+}
+
+.nosotros-c{
+   
+   border-bottom: 1px solid #FFF;
+}
+
+.especialistas{
+  
+    background-image: url(../images/nosotros-line.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 90px;
+}
+
+@media (max-width: 1000px){
+    
+    .nosotros,
+    .contacto{
+        background-image: url(../);
+        background-color:#656161 !important;
+    }
+}
+
+    @media (max-width:769px){
+    
+        #map{
+            margin-top:1.5rem;
+        }
+        
+        .nosotros,
+        .libros,
+        .libros1{
+            padding-bottom: 26%;
+        }
+    }
+    
+.contacto{
+    background-image: url(../images/back-nosotros.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#contacto{
+    margin-top:-4%;
+}
+
+#nosotros{
+    background-image: url(../images/back-nosotros.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.specialist .card,
+.specialist1 .card,
+.diplooo .card{
+	align-items:center;
+	background-color:inherit;
+	border: none;
+}
+
+.specialist1 .card p{
+font-size: 17px;
+color: white;
+}
+
+/*Media queries para ajutar el titulo y el parrafo en 
+los especialistas responsive*/
+@media (max-width: 769px){
+.specialist .card-group h1{
+	font-size: 1.5em !important;
+	margin-top:0px;
+}
+
+.specialist .card-group p{
+	
+	font-size: 16px;
+}
+
+.specialist .card-title{
+
+	margin-top: -1.25rem;
+	margin-bottom:0.25rem;
+}
+
+
+
+}
+
+#elemento{
+    margin-top: 104px;
+}
+
+/* Eliminamos el borde */
+.libros  .card,
+.libros1 .card{
+	background-color:inherit;
+	border: none;
+	
+}
+
+.libros .card-group img{
+
+	margin-left:26px;	
+	height: 173px !important;
+	width:130px !important;
+}
+
+
+.hori-libros img{
+
+	margin-left:23px;
+	height:120px !important;
+	width:156px !important; 
+
+}
+
+
+
+.verti-libros p,
+.hori-libros  p{
+	font-size: 18px;
+	text-align: initial;
+}
+
+
+
+
+
+
+.imagenes{
+	border-radius: 1.25rem!important;
+}
+
+
+#particles-js{
+}
+
+.margin-top10{
+  margin-top:10px;
+}
+.margin-top20{
+  margin-top:20px;
+}
+.margin-top30{
+  margin-top:30px;
+}
+.margin-top40{
+  margin-top:40px;
+}
+.margin-top50{
+  margin-top:50px;
+}
+.margin-top60{
+  margin-top:60px;
+}
+.margin-top70{
+  margin-top:70px;
+}
+.margin-top80{
+  margin-top:80px;
+}
+.margin-top90{
+  margin-top:90px;
+}
+.margin-top100{
+  margin-top:100px;
+}
+.margin-top110{
+  margin-top:110px;
+}
+.margin-top120{
+  margin-top:120px;
+}
+.margin-top130{
+  margin-top:130px;
+}
+.margin-top140{
+  margin-top:140px;
+}
+.margin-top160{
+  margin-top:160px;
+}
+
+.margin-bottom10{
+  margin-bottom:10px;
+}
+.margin-bottom20{
+  margin-bottom:20px;
+}
+.margin-bottom30{
+  margin-bottom:30px;
+}
+.margin-bottom40{
+  margin-bottom:40px
+}
+.margin-bottom50{
+  margin-bottom:50px;
+}
+.margin-bottom60{
+  margin-bottom:60px;
+}
+.margin-bottom70{
+  margin-bottom:70px;
+}
+.margin-bottom80{
+  margin-bottom:80px;
+}
+.margin-bottom90{
+  margin-bottom:90px;
+}
+.margin-bottom100{
+  margin-bottom:100px;
+}
+
+
+
+
+/*Media Query para logo y collapse button responsive */
+@media (max-width: 769px){
+
+.navbar{
+  background-color: rgba(255, 255, 255, 0.93);
+  padding-left: 70px;
+  padding-right: 30px;
+}
+
+.navbar-nav li i{
+  margin-top: 10px;
+  margin-left: 9px;
+}
+
+.specialist .carousel-inner img{
+
+	width:50%!important;
+	
+}
+
+}
+/*Carousel style*/
+.carousel-control-prev,.carousel-control-next{
+	color: black;
+	font-size:47px;
+	
+}
+
+.carousel-indicators{
+	bottom: -14px;
+	left: -43px;
+}
+
+.carousel-pleca{
+	position:relative;
+	margin-top:-3%
+}
+
+.carousel-pleca1{
+    margin-bottom:-4%;
+    margin-top:-3%;
+}
+
+/* Hace mas pequeño muetro margen */
+.jumbotron{
+	
+   /* Elimina el contorno cilindrico */
+	margin:22px 48px 0 49px;
+}
+
+/* Agregamos un margen en la parte de abajo */
+.padding{
+
+	padding-bottom: 2rem;
+}
+
+
+/*Esta clase la tienen Build & Meet the them row*/
+.welcome {
+
+	width: 75%;
+	margin:0 auto;
+	padding-top: 2rem;
+
+}
+
+/*hr representa las lineas que parecen divisiones */
+.welcome hr {
+
+	border-top: 2px solid #b4b4b4;
+	width: 100%;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+
+
+/*Iconos html boosttrap csss */
+.fa-code{
+
+	color: #e54d26;
+
+}
+
+.fa-bold{
+
+	color: #563d7c;
+}
+
+.fa-css3{
+
+	color: #2163af;
+}
+
+/*Redimensionamos el tamaño de nuesros iconos */
+.fa-code,.fa-bold,.fa-css3{
+
+	font-size: 4em;
+	margin:1rem;
+} 
+
+.fun {
+	width:100%;
+	margin-bottom: 2rem;
+}
+
+.gif{
+
+	/*aplicandolo de esta manera 
+	nuestra imagen ocupa el 100% de ancho pero en base a su contenedor*/
+	max-height:100%;
+	max-width:100%;
+}
+
+
+.social a{
+	font-size: 4.5em;
+	padding: 3rem;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover{
+
+	color: #d5d5d5;
+
+}
+
+.fa-facebook{
+
+	color: #3b5998;
+}
+
+.fa-twitter {
+
+	color: #00aced;
+}
+
+.fa-google-plus-g {
+
+	color: #dd4b39;
+
+}
+
+.fa-instagram{
+
+	color: #517fa4;
+}
+
+
+.fa-youtube{
+	color: #bb0000;
+}
+
+
+/*Iconos carousel next prev*/
+.fa-arrow-circle-left,
+.fa-arrow-circle-right{
+
+	font-size: 2.4em;
+	color:#060606;
+}
+
+
+
+	#post .cuadro{
+
+		
+		display: inline-block !important;
+    	height: 80px;
+    	
+	}
+
+	#post .cuadro-fecha{
+
+		
+		
+		width: 52%;
+        height: 54px;
+        
+        padding:3px 20px !important;
+        text-align:center;
+	}
+}
+
+
+
+
+
+/*Personalizamos y cambiamos por circulo*/
+.carousel-indicators >li {
+    
+      text-indent: 0;
+      margin: 0 2px;
+      width: 15px;
+      height: 15px;
+      
+      border-radius: 100%;
+      line-height: 30px;
+      color: #fff;
+      background-color: #999;
+      transition: all 0.25s ease;       
+}
+
+
+
+#particles-js{
+	
+   background-color:#0085ba; 
+}
+
+#particles-js img{
+    width:50%;
+    position: absolute;
+    left: 27%;
+}
+
+#particles-js h1{
+    
+    font-family:"rounded";
+    position: absolute;
+    text-align: center;
+    color:white;
+    top:60%;
+    left:15%;
+}
+
+@media (max-width: 576px) {
+    #particles-js h1{
+    
+        
+        font-size: 1.3rem;
+        top:62%;
+        left:19 %;
+        
+    
+    }
+    
+    .specialist .carousel-inner img{
+
+	width:50%!important;
+	height:50%!important;
+}
+    
+}
+
+
+.noticias img{
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+footer {
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+}
+
+hr.light{
+	border-top: 1px solid #d5d5d5;
+	width:75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+footer a {
+	color:#d5d5d5;
+}
+
+hr.light-100{
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+@media(max-width: 992px){
+
+	.social a {
+
+		font-size: 4em;
+		padding: 2rem;
+     }	
+}
+
+
+
+
+#diplo .row {
+	margin-top:3%;
+}
+
+
+#diplo2  .row,
+#diplo3  .row,
+{
+	
+	margin-top: 3%;
+	margin:12px auto;
+}
+
+
+
+#ejemplo >.row h1{
+
+	margin-left: 16px;
+	margin-bottom: 0px !important;
+}
+
+
+#diplo .card:hover{
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+	 box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+
+
+
+#diplo .card-body{
+
+
+	position: absolute;
+	height: 100%;
+    opacity: 0;
+    
+	
+
+}
+
+#diplo .card-body:hover{
+
+	opacity: 1;
+	background:white;
+	color:grey;
+}
+
+
+.card-element{
+
+
+	background-color:#1a98e7;
+
+	transition: 1.78s;
+}
+
+.card:hover >.card-element{
+
+
+	display:block;
+	height:10px;
+
+}
+
+
+
+
+
+
+/*Carousel with plugging*/
+
+
+ 
+/*.navbar{
+	
+	right:0;
+	left:0;
+	margin: 20px auto;
+}
+
+
+.navbar-nav
+.nav-link {
+
+	color:grey !important;
+	line-height: 20px;
+	text-align:center;
+	display: block;
+	padding:20px;
+}
+
+.ml-auto{
+
+
+}*/
+
+
+
+
+
+/*Estilos para los post */
+
+#post .ordenamiento{
+
+	background:#e6e6e6;
+	padding:5px 5px;
+	
+}
+
+
+#post .cuadro {
+
+	position:static;
+	display:flex;
+}
+
+#post .cuadro-fecha{
+
+	position:relative;
+	left:-5px;
+	top:-5px;
+	padding: 15px 30px;
+	background: #f6f6f6;
+	color:red;
+}
+
+
+.talleres{
+  background-image:url(../images/back-nosotros.jpg);
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top: 84px;
+}
+.talleres .container-fluid p{
+	color: white !important;
+}
+
+.talleres .card{
+
+	text-align:left !important;
+	margin-top:5px;
+}
+
+.cnt_info{
+	color: #3ecce3;
+	margin-right: 15px;
+}
+
+.cnt_info >i {
+    color: #0c5c9b;
+}
+
+
+.tabla{
+ height: 200px;
+ overflow-y: auto;
+}
+
+.titulos{
+    margin-left: 20%;
+    padding-left: 60%;
+}
+
+.neuro h1{
+    
+    font-family:"source";
+    color: gray;
+}
+
+.fechas h2,h4{
+    font-family:"source";
+    color: gray;
+}
+
+.marco{
+    
+    background-color: lightgray;
+    height: 220px;
+}
+
+.marco h1{
+    font-family:"source";
+    color: gray;
+}
+
+.objetivos{
+    background-image: url(../images/laptop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    
+}
+
+.objetivos1{
+    background-image: url(../images/neurodesarrollo1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    
+}
+
+.objetivos,
+.objetivos1{
+    font-family:"source";
+    color: white;
+}
+
+.requisitos h3{
+    padding-top:20px;
+    font-family:"distopia";
+    color:white;
+   
+}
+.requisitos p{
+    color:black;
+}
+
+.requisitos{
+    
+    background-color: darkgray;
+}
+.plan h3{
+    font-family:"distopia";
+    color: #007bff !important;
+}
+
+#cartas .blue2{
+    font-family: "wardness";
+    font-size: 1.75rem;
+}
