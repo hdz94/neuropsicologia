@@ -74,9 +74,7 @@
 									
 						<li class="nav-item">
 		        						
-			        		<a class="nav-link" href="#" id="navbarDropdownMenuLink" 
-			        		   data-toggle="dropdown" aria-haspopup="true" 
-			        		   aria-expanded="false"><p><i class="fa fa-calendar mov"></i> Eventos Espaciales</p>
+			        		<a class="nav-link" href="inicio#contacto"><p><i class="fa fa-calendar mov"></i>Contacto</p>
 			        		</a>
 		        
 		        			
@@ -92,7 +90,7 @@
 							
 						<li class="nav-item">
 
-						   <a href="inicio#contacto"class="nav-link"><p><i class="fa fa-phone-square mov"></i> Contacto</p></a>
+						   <a href="admin/login"class="nav-link"><p><i class="fa fa-phone-square mov"></i>Iniciar Sesion</p></a>
 						</li>
 								
 
