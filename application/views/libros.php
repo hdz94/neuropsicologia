@@ -48,7 +48,8 @@
 																			<p class="card-text">
 																				*Bases Cerebrales de la Lectura <br>
 																				*Psicologia de la Lectura <br>
-																				*Descripcion del metodo</p>
+																				*Descripcion del metodo <br>
+                                                                                *Métodos prácticos de solución de problemas de aprendizaje en la lectura.</p>
 											                                <a href="#" class="btn btn-info">Ver mas</a>
 				      </div>
             </div>
