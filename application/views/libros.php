@@ -45,7 +45,6 @@
 				      <div class="card-body">
 
 																			<h4 class="card-title blue2 shadow">Enseñanza de la Lectura</h4>
-																			<h5 class="shadow">Metodo practico para formacion lectora</h5>
 																			<p class="card-text">
 																				*Bases Cerebrales de la Lectura <br>
 																				*Psicologia de la Lectura <br>

@@ -67,8 +67,7 @@
 															
 				  <div class="card-body">
 				       <h4 class="card-title blue2 shadow">Métodica para el desarrollo y la correción de la atención en niños escolares.</h4>
-				       <h5 class="shadow">Alternative correction methods for Attention Deficit Disorder in
-                        preschool age</h5>
+				       
 				        
 													
 				           <p class="card-text">
@@ -100,9 +99,7 @@
                <div class="card-body">
 				
                   <h4 class="card-title blue2 shadow">La teoría de la actividad aplicada a la enseñanza</h4>
-				  <h5 class="shadow">
-                        Benemerita Universidad Autonomá de Puebla
-                        </h5>
+                        <p class="card-text">Benemerita Universidad Autonomá de Puebla</p>
                         <p class="card-text">
                         <br>*Yulia Solovieva<br>
 				            *Adriana Mata Esquivelr<br>
@@ -122,10 +119,6 @@
 				    <div class="card-body">
 
                         <h4 class="card-title blue2 shadow">Afasia. Aspectos teóricos y metodológicos. Monografías de la Revista Española de N.</h4>
-                        <h5 class="shadow">
-                        Editorial
-                        Luis Quintanar Rojas
-                        </h5>
 				        <p class="card-text">Breve historia del estudio de las alteraciones del lenguaje</p>
 				        <a href="#" class="btn btn-info">Ver mas</a>
 				    </div>

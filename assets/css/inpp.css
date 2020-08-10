@@ -335,7 +335,8 @@ los especialistas responsive*/
 .verti-libros p,
 .hori-libros  p{
 	font-size: 18px;
-	text-align: initial;
+  text-align: initial;
+  color: aliceblue;
 }
 
 
