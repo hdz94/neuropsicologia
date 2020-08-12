@@ -1,4 +1,4 @@
-<?php $this->load->view('adminpanel/header.php'); ?>
+<?php $this->load->view("adminpanel/header"); ?>
 
 <div class="container-fluid">
   <div class="row">
@@ -152,4 +152,4 @@
   </div>
   </div>
 
-  <?php $this->load->view('adminpanel/footer'); ?>
+  <?php $this->load->view("adminpanel/footer"); ?>
