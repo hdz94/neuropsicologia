@@ -7,13 +7,38 @@ class Login extends CI_Controller {
 
     public function index(){
 
-        $this->load->view('loginview');
+        $this->load->view('adminpanel/loginview');
         
     }
     
     function login_post(){
-        echo 'helowwasasasa';
+        if(isset($_POST)){
+            
+            $name=$_POST['email'];
+            $password=$_POST['password'];
+
+            $query = $this->db->query("SELECT * FROM `backend_user` WHERE `username`='$name' AND `userpassword`='$password'");
+            
+            //that means are rows returning to this match
+            if($query->num_rows()) {
+
+                $result = $query->result_array();
+
+                $this->session->set_userdata('user_id',$result[0]['ui']);
+
+                redirect('dashboard');
+
+                
+            }else{
+                    echo "cara de topo";
+            }
+
+        }else{
+            die("Invalid Input");
+        }
     }
 
-    
+    function logout(){
+        redirect("login");
+    }
 }

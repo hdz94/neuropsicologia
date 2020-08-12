@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => 'us-cdbr-east-02.cleardb.com',
+	'username' => 'b7a1e4bd382472',
+	'password' => 'c09a8d56',
+	'database' => 'heroku_68cc4035c7c716a',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
