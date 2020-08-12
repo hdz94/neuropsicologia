@@ -12,7 +12,7 @@ class Login extends CI_Controller {
     }
     
     function login_post(){
-        
+        echo 'helowwasasasa';
     }
 
     
