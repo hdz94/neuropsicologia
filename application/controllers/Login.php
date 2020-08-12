@@ -12,6 +12,7 @@ class Login extends CI_Controller {
     }
     
     function login_post(){
+        $this->load->view('libros');
     }
 
     
