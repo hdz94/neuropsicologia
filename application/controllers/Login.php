@@ -24,7 +24,7 @@ class Login extends CI_Controller {
 
                 $result = $query->result_array();
 
-                $this->session->set_userdata('user_id',$result[0]['ui']);
+                //$this->session->set_userdata('user_id',$result[0]['ui']);
 
                 redirect('dashboard');
 
