@@ -25,7 +25,7 @@ class Login extends CI_Controller {
                 $result = $query->result_array();
 
                 //redirect('dashboard');
-                echo "login access";
+                redirect('dashboard');
                 
             }else{
                     echo "cara de topo";
