@@ -25,7 +25,7 @@ class Login extends CI_Controller {
                 $result = $query->result_array();
 
                 //redirect('dashboard');
-                redirect('dashboard');
+                $this->load->view('adminpanel/dashboard');
                 
             }else{
                     echo "cara de topo";
