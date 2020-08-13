@@ -12,7 +12,7 @@
   </head>
   <body>
     
-    <form class="form-signin" action="login/login_post" method="post">
+    <form class="form-signin" action="<?=base_url().'login/login_post'?>" method="post">
 
   	  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   	  <label for="inputEmail" class="sr-only">Username</label>
