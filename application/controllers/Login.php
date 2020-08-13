@@ -24,8 +24,8 @@ class Login extends CI_Controller {
 
                 $result = $query->result_array();
 
-                //redirect('dashboard');
-                $this->load->view('adminpanel/dashboard');
+                redirect('dashboard');
+                
                 
             }else{
                     echo "cara de topo";
@@ -37,6 +37,6 @@ class Login extends CI_Controller {
     }
 
     function logout(){
-        redirect("login");
+        redirect('login');
     }
 }
