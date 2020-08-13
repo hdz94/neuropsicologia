@@ -90,7 +90,7 @@
 							
 						<li class="nav-item">
 
-						   <a href="login" class="nav-link"><p><i class="fa fa-phone-square mov"></i>Iniciar Sesion</p></a>
+						   <a href="<?=base_url().'login'?>" class="nav-link"><p><i class="fa fa-phone-square mov"></i>Iniciar Sesion</p></a>
 						</li>
 								
 
