@@ -24,7 +24,7 @@ class Login extends CI_Controller {
 
                 $result = $query->result_array();
 
-                echo 'aver que pedo';
+                redirect('dashboard');
                 
                 
             }else{
