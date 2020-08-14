@@ -36,15 +36,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog/addblog">
+                            <a class="nav-link" href="book/addbook">
                               <span data-feather="file"></span>
-                                Add Blog
+                                Add Book
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog">
+                            <a class="nav-link" href="book">
                               <span data-feather="shopping-cart"></span>
-                                View Blog
+                                View Book
                             </a>
                         </li>
                     </ul>
