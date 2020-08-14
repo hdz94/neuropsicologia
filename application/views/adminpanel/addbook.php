@@ -24,8 +24,7 @@
       </form>
 
     </main>
-  </div>
-</div>
+  
 
 <?php $this->load->view('adminpanel/footer.php'); ?>
 
