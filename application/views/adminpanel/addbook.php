@@ -15,7 +15,7 @@
         </div>
 
         <div class="form-group">
-          <input type="file" class="form-control" name="file" placeholder="Title">
+          <input type="text" class="form-control" name="file" placeholder="Title">
         </div>
         
         <button type="submit" class="btn btn-primary">Add Book</button>
@@ -24,7 +24,8 @@
       </form>
 
     </main>
-  
+  </div>
+</div>
 
 <?php $this->load->view('adminpanel/footer.php'); ?>
 

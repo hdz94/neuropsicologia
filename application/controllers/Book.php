@@ -1,57 +1,46 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Book extends CI_Controller {
+class Blog extends CI_Controller {
 
+        
 
     public function index(){
+
+        
     }
-    
+	
     function addbook(){
-
         $this->load->view('adminpanel/addbook');
-
     }
-    
+
     function addbook_post(){
-        if ($_FILES) {
+        /*print_r($_POST);
+        print_r($_FILES);*/
+        if(isset($_POST)){
 
-            $config['upload_path']          = '../assets/upload/blogimg/';
-            $config['allowed_types']        = 'gif|jpg|png|jpeg';
+            $blog_title=$_POST['blog_title'];
+            $desc=$_POST['desc'];
+            $file=$_POST['file'];
 
-            $this->load->library('upload', $config);
+     
+            $query = $this->db->query("INSERT INTO `books`( `book_title`, `book_desc`, `book_img`) 
+                 VALUES ('$blog_title','$desc','$file')");
 
-            if( ! $this->upload->do_upload('file')){
-                $error = array('error' => $this->upload->display_errors());
-
-                 die("Error");
-                 //$this->load->view('upload_form', $error);
+            if ($query) {
+                $this->session->set_flashdata('inserted', 'yes');
+                    redirect('book/addblog');
             }else{
+                $this->session->set_flashdata('inserted', 'no');
+                    redirect('book/addblog');
+            }  
 
-                $data = array('upload_data' => $this->upload->data());
-
-                $fileurl = "assets/upload/blogimg/".$data['upload_data']['file_name'];
-
-                $blog_title = $_POST['blog_title'];
-                $desc = $_POST['desc'];
-
-                $query = $this->db->query("INSERT INTO `books`( `book_title`, `book_desc`, `book_img`) 
-                VALUES ('$blog_title','$desc','$fileurl')");
-
-                if ($query){
-                
-                    $this->session->set_flashdata('inserted', 'yes');
-                    redirect('book/addbook');
-                }else{
-                    $this->session->set_flashdata('inserted', 'no');
-                    redirect('book/addbook');
-                
-                
-                }
-            }
-
+        }else{
+            die("Invalid Input");
         }
+
     }
+                      
     
+
 }
