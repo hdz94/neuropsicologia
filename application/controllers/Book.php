@@ -17,7 +17,7 @@ class Book extends CI_Controller {
     function addbook_post(){
         if ($_FILES) {
 
-            $config['upload_path']          = './assets/upload/blogimg/';
+            $config['upload_path']          = '../assets/upload/blogimg/';
             $config['allowed_types']        = 'gif|jpg|png|jpeg';
 
             $this->load->library('upload', $config);
