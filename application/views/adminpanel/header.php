@@ -19,7 +19,7 @@
     
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="login/logout">Sign out</a>
+          <a class="nav-link" href="<?=base_url().'login/logout'?>">Sign out</a>
         </li>
       </ul>
     </nav>
@@ -30,19 +30,19 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="dashboard">
+                            <a class="nav-link active" href="<?=base_url().'dashboard'?>">
                               <span data-feather="home"></span>
                                   Dashboard <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="book/addbook">
+                            <a class="nav-link" href="<?=base_url().'book/addbook'?>">
                               <span data-feather="file"></span>
                                 Add Book
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="book">
+                            <a class="nav-link" href="<?=base_url().'book'?>">
                               <span data-feather="shopping-cart"></span>
                                 View Book
                             </a>
