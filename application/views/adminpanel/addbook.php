@@ -28,3 +28,18 @@
 </div>
 
 <?php $this->load->view('adminpanel/footer.php'); ?>
+
+<script type="text/javascript">
+  <?php 
+      if (isset($_SESSION['inserted'])) {
+        
+        if ($_SESSION['inserted']=="yes") {
+          # code...
+          echo "alert('Data Inserted Successfully!');";
+        }
+        else{
+          echo "alert('Not Inserted!');";
+        }
+      }
+   ?>
+</script>

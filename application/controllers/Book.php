@@ -30,12 +30,13 @@ class Book extends CI_Controller {
             }else{
 
                 $data = array('upload_data' => $this->upload->data());
+
                 $fileurl = "assets/upload/blogimg/".$data['upload_data']['file_name'];
 
                 $blog_title = $_POST['blog_title'];
                 $desc = $_POST['desc'];
 
-                $query = $this->db->query("INSERT INTO `articles`( `blog_title`, `blog_desc`, `blog_img`) 
+                $query = $this->db->query("INSERT INTO `books`( `book_title`, `book_desc`, `book_img`) 
                 VALUES ('$blog_title','$desc','$fileurl')");
 
                 if ($query){
