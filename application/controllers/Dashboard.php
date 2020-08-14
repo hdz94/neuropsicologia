@@ -8,10 +8,10 @@ class Dashboard extends CI_Controller {
     public function index(){
 
         if(isset($_SESSION['user_id'])){
-            $this->load->view('adminpanel/addblog');
+            
+            $this->load->view('adminpanel/dashboard');
         }else{
-            $this->load->view('adminpanel/viewblog');
-            //redirect('admin/login');
+            redirect("login");
         }
         
         

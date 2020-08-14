@@ -7,11 +7,24 @@ class Login extends CI_Controller {
 
     public function index(){
 
-        $this->load->view('adminpanel/loginview');
-        
+        if(isset($_SESSION['user_id'])){
+            
+            redirect("dashboard");
+        }
+        $data=[];
+                
+        if(isset($_SESSION['error'])){
+            
+            $data['error'] = $_SESSION['error'];
+         }else{
+            $data['error'] = "NO_ERROR";
+         }
+         $this->load->view('adminpanel/loginview',$data);
+
     }
     
     function login_post(){
+        
         if(isset($_POST)){
             
             $name=$_POST['email'];
@@ -25,11 +38,13 @@ class Login extends CI_Controller {
                 $result = $query->result_array();
 
                 $this->session->set_userdata('user_id', $result[0]['uid']);
-                redirect('dashboard');
-                
+                redirect("dashboard");
                 
             }else{
-                    echo "cara de topo pinche putañeroooo";
+                
+                //Credentials are invalid 
+                $this->session->set_flashdata('error', 'Invalid credentials');
+                redirect("login");
             }
 
         }else{
@@ -38,6 +53,7 @@ class Login extends CI_Controller {
     }
 
     function logout(){
-        redirect('login');
+        session_destroy();
+        redirect("login");
     }
 }
