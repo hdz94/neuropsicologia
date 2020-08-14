@@ -12,16 +12,16 @@
   </head>
   <body>
 
-      <?php
-         if( $error != "NO_ERROR"){
-            echo '<div class="alert alert-danger">';
-            echo "$error";
-            echo '</div>';
-         }
-      ?>
+      
     
       <form class="form-signin" action="<?=base_url().'login/login_post'?>" method="post">
-
+           <?php
+              if( $error != "NO_ERROR"){
+                echo '<div class="alert alert-danger">';
+                echo "$error";
+                echo '</div>';
+              }
+           ?>
   	    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   	    <label for="inputEmail" class="sr-only">Username</label>
         
