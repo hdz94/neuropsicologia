@@ -1,0 +1,1 @@
+<h1>Session init succesfully</h1>

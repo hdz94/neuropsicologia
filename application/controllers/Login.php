@@ -24,11 +24,12 @@ class Login extends CI_Controller {
 
                 $result = $query->result_array();
 
+                $this->session->set_userdata('user_id', $result[0]['uid']);
                 redirect('dashboard');
                 
                 
             }else{
-                    echo "cara de topo";
+                    echo "cara de topo pinche putañeroooo";
             }
 
         }else{
