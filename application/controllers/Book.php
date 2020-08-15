@@ -1,6 +1,11 @@
 <?php
 require 'autoload.php';
-require 'config-cloud.php';
+\Cloudinary::config(array( 
+    "cloud_name" => "hmqtxjpwb", 
+    "api_key" => "769213189557742", 
+    "api_secret" => "W_3pyJXF6fheBapS4JuIDhBMDHI", 
+    "secure" => true
+  ));
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
