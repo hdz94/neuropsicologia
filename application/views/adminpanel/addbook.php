@@ -15,7 +15,10 @@
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" name="file" placeholder="Title">
+          <input type="file" class="form-control" name="file" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <input type="file" class="form-control" name="file2www" placeholder="Tasase">
         </div>
         
         <button type="submit" class="btn btn-primary">Add Book</button>
