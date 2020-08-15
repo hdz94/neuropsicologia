@@ -6,7 +6,8 @@ class Book extends CI_Controller {
         
 
     public function index(){
-        $this->load->view('adminpanel/addbook');
+       
+        $this->load->view('adminpanel/viewbook');
 
         
     }
@@ -24,7 +25,7 @@ class Book extends CI_Controller {
 
             $blog_title=$_POST['blog_title'];
             $desc=$_POST['desc'];
-            $file=$_POST['file'];
+            $file=$_FILES['fie']['name'];
 
      
             $query = $this->db->query("INSERT INTO `books`( `book_title`, `book_desc`, `book_img`) 

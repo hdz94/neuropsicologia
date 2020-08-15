@@ -15,7 +15,7 @@
         </div>
 
         <div class="form-group">
-          <input type="file" class="form-control" name="file" placeholder="Title">
+          <input type="file" class="form-control" name="file" placeholder="Titlewqwqwqw">
         </div>
         
         
