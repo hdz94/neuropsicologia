@@ -1,11 +1,5 @@
 <?php
 require 'autoload.php';
-\Cloudinary::config(array( 
-    "cloud_name" => "hmqtxjpwb", 
-    "api_key" => "769213189557742", 
-    "api_secret" => "W_3pyJXF6fheBapS4JuIDhBMDHI", 
-    "secure" => true
-  ));
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -26,6 +20,14 @@ class Book extends CI_Controller {
 
     
     function addbook_post(){
+        
+        \Cloudinary::config(array( 
+            "cloud_name" => "hmqtxjpwb", 
+            "api_key" => "769213189557742", 
+            "api_secret" => "W_3pyJXF6fheBapS4JuIDhBMDHI", 
+            "secure" => true
+          ));
+        
         /*print_r($_POST);
         print_r($_FILES);*/
         if(isset($_POST)){
