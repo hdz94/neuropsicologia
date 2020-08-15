@@ -1,19 +1,22 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Blog extends CI_Controller {
+class Book extends CI_Controller {
 
         
 
     public function index(){
+        $this->load->view('adminpanel/addbook');
 
         
     }
 	
     function addbook(){
+       
         $this->load->view('adminpanel/addbook');
     }
 
+    
     function addbook_post(){
         /*print_r($_POST);
         print_r($_FILES);*/
