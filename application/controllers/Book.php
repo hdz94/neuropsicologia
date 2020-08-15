@@ -32,10 +32,10 @@ class Book extends CI_Controller {
 
             if ($query) {
                 $this->session->set_flashdata('inserted', 'yes');
-                    redirect('book/addblog');
+                    redirect('book/addbook');
             }else{
                 $this->session->set_flashdata('inserted', 'no');
-                    redirect('book/addblog');
+                    redirect('book/addbook');
             }  
 
         }else{
