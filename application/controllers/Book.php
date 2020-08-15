@@ -1,9 +1,11 @@
 <?php
+require 'autoload.php';
+require 'config-cloud.php';
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Book extends CI_Controller {
-
-        
+       
 
     public function index(){
        
@@ -23,11 +25,13 @@ class Book extends CI_Controller {
         print_r($_FILES);*/
         if(isset($_POST)){
 
+            
             $blog_title=$_POST['blog_title'];
             $desc=$_POST['desc'];
-            $file=$_FILES['fie']['name'];
+            $file=$_FILES['fie']['tmp-name'];
 
-     
+            \Cloudinary\Uploader::upload($file, array("public_id" => $blog_title));
+
             $query = $this->db->query("INSERT INTO `books`( `book_title`, `book_desc`, `book_img`) 
                  VALUES ('$blog_title','$desc','$file')");
 
