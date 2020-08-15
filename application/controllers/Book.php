@@ -35,7 +35,7 @@ class Book extends CI_Controller {
             
             $blog_title=$_POST['blog_title'];
             $desc=$_POST['desc'];
-            $file=$_FILES['fie']['tmp-name'];
+            $file=$_FILES['fie']['name'];
 
             \Cloudinary\Uploader::upload($file, array("public_id" => $blog_title));
 
