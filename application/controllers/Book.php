@@ -1,6 +1,6 @@
 <?php
-require 'autoload.php';
-require 'config-cloud.php';
+require 'vendor/autoload.php';
+require 'vendor/config-cloud.php';
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
