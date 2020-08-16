@@ -1,7 +1,7 @@
 <?php
-require '/../vendor/autoload.php';
+require '/neuropsicologia/vendor/autoload.php';
 
-require '/../vendor/config-cloud.php';
+require '/neuropsicologia/vendor/config-cloud.php';
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
