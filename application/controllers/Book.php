@@ -31,12 +31,14 @@ class Book extends CI_Controller {
             $blog_title=$_POST['blog_title'];
             $desc=$_POST['desc'];
             $file=$_POST['fie']['name'];
+            $con=1;
 
-            \Cloudinary\Uploader::upload($file, array("public_id" => $blog_title));
+            \Cloudinary\Uploader::upload($file, array("$con" => $blog_title));
 
             $query = $this->db->query("INSERT INTO `books`( `book_title`, `book_desc`, `book_img`) 
                  VALUES ('$blog_title','$desc','$file')");
-
+            $con++;
+            
             if ($query) {
                 $this->session->set_flashdata('inserted', 'yes');
                     redirect('book/addbook');
