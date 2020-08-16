@@ -1,7 +1,7 @@
 <?php
-require '/neuropsicologia.herokuapp.com/vendor/autoload.php';
+require 'autoload.php';
 
-require '/neuropsicologia.herokuapp.com/vendor/config-cloud.php';
+require 'config-cloud.php';
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
